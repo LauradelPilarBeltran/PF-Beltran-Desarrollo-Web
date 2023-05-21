@@ -1,0 +1,75 @@
+// Footer - Ejemplo de Nesting 
+
+.pie-de-pagina {
+    width: 100%;
+    background-color: #225859;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0;
+
+        .box {
+
+            figure {
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+            }
+
+            h3 {
+                color: #fefae0;
+                margin-bottom: 25px;
+                font-size: 25px
+            }
+
+            .img-contact {
+                width: 20px;
+            }
+
+            p {
+                display: inline-block;
+                margin-bottom: 10px;
+                color: #fefae0;
+            }
+
+            .info {
+                position: relative;
+                padding-left: 0;
+
+                li {
+                    display: grid;
+                    grid-template-columns: 30px 1fr;
+                    margin-bottom: 16px;
+                    font-size: 18px;
+                    color: #fefae0;
+                }
+            }
+
+            .redes-sociales {
+                display: inline-block;
+                line-height: 50px;
+                margin-right: 10px;
+                text-align: center;
+
+                .redes {
+                    margin: 10px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    .grupo-2 {
+        background-color: #1f4e4f;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fefae0;
+    }
+}

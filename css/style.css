@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Varta", sans-serif;
+}
+
+.header .navbar {
+  background-color: rgb(248, 248, 248);
+}
+.header .navbar .navbar-brand img {
+  height: 64px;
+}
+.header .navbar .navbar-collapse {
+  justify-content: end;
+}
+.header .navbar .navbar-collapse ul.navbar-nav {
+  text-align: center;
+}
+.header .navbar .navbar-collapse ul.navbar-nav li.nav-item .nav-link:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(114, 212, 212);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.header .navbar .navbar-collapse ul.navbar-nav li.nav-item .nav-link:hover:after {
+  width: 100%;
+}
+
+main .general {
+  padding-bottom: 20px;
+}
+main .general .heading {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+main .general .heading h1 {
+  font-size: 3.1rem;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
+  padding: 10px;
+}
+main .general .heading h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(84, 175, 175);
+}
+main .general .heading p {
+  font-size: 1.1rem;
+  color: #515050;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+main .general .container {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+main .general .container .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .general .container .about .about-image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+main .general .container .about .about-image img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  transition: 0.5s ease;
+}
+main .general .container .about .about-image img:hover {
+  transform: scale(1.1);
+}
+main .general .container .about .about-content {
+  flex: 1;
+  text-align: center;
+}
+main .general .container .about .about-content h2 {
+  font-family: "Varta", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #169E87;
+  padding: 10px;
+}
+main .general .container .about .about-content p {
+  font-size: 1.12rem;
+  line-height: 1.4;
+  color: #786b6b;
+  text-align: justify;
+}
+main .general .container .about .about-content .read-more, main .general .container .about .about-content .box-contact .content-form .contact-wrapper .contact-form form button, main .box-contact .content-form .contact-wrapper .contact-form form .general .container .about .about-content button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(28, 133, 133);
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+main .general .container .about .about-content .read-more:hover, main .general .container .about .about-content .box-contact .content-form .contact-wrapper .contact-form form button:hover, main .box-contact .content-form .contact-wrapper .contact-form form .general .container .about .about-content button:hover {
+  background-color: rgb(11, 83, 83);
+}
+main .general .section-clients h2 {
+  font-family: "Varta", sans-serif;
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
+  color: #333;
+  padding-top: 30px;
+}
+main .general .section-clients .clientes {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #67999e, #7cadae, #93c2bd, #aad7ce, #c3ecde);
+}
+main .general .section-clients .clientes div {
+  padding: 20px 20px;
+}
+main .general .section-clients .clientes div .client1 {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.pie-de-pagina {
+  width: 100%;
+  background-color: #225859;
+}
+.pie-de-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0;
+}
+.pie-de-pagina .grupo-1 .box figure {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+.pie-de-pagina .grupo-1 .box h3 {
+  color: #fefae0;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+.pie-de-pagina .grupo-1 .box .img-contact {
+  width: 20px;
+}
+.pie-de-pagina .grupo-1 .box p {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #fefae0;
+}
+.pie-de-pagina .grupo-1 .box .info {
+  position: relative;
+  padding-left: 0;
+}
+.pie-de-pagina .grupo-1 .box .info li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #fefae0;
+}
+.pie-de-pagina .grupo-1 .box .redes-sociales {
+  display: inline-block;
+  line-height: 50px;
+  margin-right: 10px;
+  text-align: center;
+}
+.pie-de-pagina .grupo-1 .box .redes-sociales .redes {
+  margin: 10px;
+  width: 25px;
+}
+.pie-de-pagina .grupo-2 {
+  background-color: #1f4e4f;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fefae0;
+}
+
+main .imagen-servicios img {
+  display: block;
+  width: 100%;
+}
+main .container div {
+  margin-right: 0;
+  margin-left: 0;
+}
+main .container div h1 {
+  font-size: 2.18rem;
+  color: #000;
+}
+main .container div h1::after {
+  content: "";
+  position: center;
+  width: 50%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(84, 175, 175);
+}
+main .container div .parrafo-servicios {
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  color: #515050;
+  text-align: justify;
+}
+main .container div .card-personalizada img {
+  width: 200px;
+  padding: 10px;
+  margin-left: 35px;
+}
+main .container div .card-personalizada .card-text {
+  text-align: justify;
+}
+main .container div .card-personalizada .boton-card {
+  background-color: rgb(11, 102, 102);
+  border: 1px solid rgb(11, 121, 121);
+  outline: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+main .imagen-servicios {
+  display: block;
+  width: 100%;
+}
+main .contenedor-presupuesto .texto-presupuesto .titulo-presupuesto {
+  font-size: 3.1rem;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+main .contenedor-presupuesto .texto-presupuesto .titulo-presupuesto::after {
+  content: "";
+  position: center;
+  width: 50%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(84, 175, 175);
+}
+main .title-presupuesto {
+  font-family: "Varta", sans-serif;
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
+  color: #169E87;
+  padding: 20px;
+}
+
+main .imagen-sobre-nosotros {
+  display: block;
+  width: 100%;
+}
+main .titulo-sobre-nosotros h1 {
+  padding: 25px;
+  margin: 10px;
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+}
+main .titulo-sobre-nosotros h1::after {
+  content: "";
+  position: center;
+  width: 50%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(84, 175, 175);
+}
+main .titulo-sobre-nosotros .parrafo-sobre-nosotros {
+  margin: 5px 20px;
+  padding: 15px 25px;
+  text-align: justify;
+  font-size: 1.2em;
+  color: #515050;
+}
+main .contendor-sobre-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 60vh;
+  background: rgb(255, 255, 255);
+}
+main .contendor-sobre-nosotros .cards {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+main .contendor-sobre-nosotros .cards .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+main .contendor-sobre-nosotros .cards .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+main .contendor-sobre-nosotros .cards .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .contendor-sobre-nosotros .cards .front h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+main .contendor-sobre-nosotros .cards .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(11, 62, 71);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+main .contendor-sobre-nosotros .cards .back h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+main .contendor-sobre-nosotros .cards .back p {
+  letter-spacing: 1px;
+}
+main .contendor-sobre-nosotros .cards:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+main .contendor-sobre-nosotros .cards:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+main .imagen-contacto img {
+  display: block;
+  width: 100%;
+}
+main .box-contact .content-form {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.2em;
+  line-height: 1.6;
+}
+main .box-contact .content-form h1 {
+  padding: 20px;
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+}
+main .box-contact .content-form h1::after {
+  content: "";
+  position: center;
+  width: 50%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(84, 175, 175);
+}
+main .box-contact .content-form .parrafo-de-contact {
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #515050;
+}
+main .box-contact .content-form .contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  padding: 1em;
+}
+main .box-contact .content-form .contact-wrapper .contact-form {
+  background-color: #4e837d;
+  padding: 10px;
+}
+main .box-contact .content-form .contact-wrapper .contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .box-contact .content-form .contact-wrapper .contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+main .box-contact .content-form .contact-wrapper .contact-form form p label {
+  display: block;
+}
+main .box-contact .content-form .contact-wrapper .contact-form form p input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fffefe;
+  border-bottom: 1px solid rgb(246, 250, 250);
+}
+main .box-contact .content-form .contact-wrapper .contact-form form .block {
+  grid-column: 1/3;
+}
+main .box-contact .content-form .contact-wrapper .contact-form form button {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fffefe;
+  border-bottom: 1px solid rgb(246, 250, 250);
+  background-color: rgb(24, 76, 76);
+  border-radius: 20px;
+  border: 0;
+}
+main .box-contact .content-form .contact-wrapper .contact-form form button:hover, main .box-contact .content-form .contact-wrapper .contact-form form button:focus {
+  background-color: rgb(8, 43, 43);
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+main .box-contact .content-form .contact-wrapper .contact-form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fffefe;
+  border-bottom: 1px solid rgb(246, 250, 250);
+}
+main .box-contact .content-form .contact-wrapper .contact-info {
+  background-image: linear-gradient(to right top, #497d77, #447b76, #3a736f, #306c68, #256461);
+  color: #f9f5f5;
+  padding: 1em;
+}
+main .box-contact .content-form .contact-wrapper .contact-info h4,
+main .box-contact .content-form .contact-wrapper .contact-info ul,
+main .box-contact .content-form .contact-wrapper .contact-info p {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+main .box-contact .content-form .contact-wrapper .contact-info h4 {
+  font-size: 1.7rem;
+}
+main .box-contact .content-form .contact-wrapper .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+main .box-contact .content-form .contact-wrapper .contact-info .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+main .box-contact .content-form .contact-wrapper .contact-info .embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main .box-contact .content-form .contact-wrapper .contact-info .contenedor-planet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .box-contact .content-form .contact-wrapper .contact-info .contenedor-planet .world {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url(../img/mundo.png);
+  background-size: cover;
+  box-shadow: inset 0 0 20px #000 inset -40px -10px 20px;
+  animation: world 15s linear infinite;
+}
+
+@keyframes world {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .heading {
+    padding: 0px 20px;
+  }
+  .heading h1 {
+    font-size: 36px;
+  }
+  .heading p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    margin: 10px;
+  }
+  .clientes {
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* FOOTER */
+  .pie-de-pagina .grupo-1 {
+    width: 70%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0;
+  }
+  .container {
+    padding: 0px;
+  }
+  .about {
+    padding: 5px;
+    flex-direction: column;
+  }
+  .about-content p {
+    padding: 0px;
+    font-size: 16px;
+  }
+  .about-content .read-more, .about-content main .box-contact .content-form .contact-wrapper .contact-form form button, main .box-contact .content-form .contact-wrapper .contact-form form .about-content button {
+    font-size: 16px;
+  }
+  .contenedor-servicios h1::after {
+    width: 100%;
+  }
+  /* PRESUPUESTO */
+  .formulario {
+    width: 80% !important;
+  }
+}
+/* Media Query contacto*/
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 425px) {
+  .img-equipo {
+    display: none;
+  }
+  .titulo-h1 {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .index-parrafo {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
